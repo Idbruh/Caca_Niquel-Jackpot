@@ -1,0 +1,35 @@
+Caça-níqueis é uma máquina de jogo de cassino com três ou mais bobinas que giram quando um botão é pressionado.
+As máquinas caça-níqueis também são conhecidas como bandidos de um braço, porque eram originalmente operadas por uma
+alavanca na lateral da máquina, distinta de um botão no painel frontal, e por causa de sua capacidade de deixar o
+jogador em dívida e empobrecido.
+
+Você receberá três bobinas de imagens diferentes e será informado em qual índice as bobinas param. A partir dessas
+informações, seu trabalho é retornar a pontuação dos rolos resultantes.
+
+Regras:
+1. Sempre existem exatamente três rolos  x
+2. Cada rolo tem 10 itens diferentes.  x
+3. As três entradas do rolo podem ser diferentes. x
+4. A matriz de rotação representa o índice de onde as bobinas terminam.
+5. As três entradas de rotação podem ser diferentes
+6. Três do mesmo vale mais do que dois do mesmo
+7. Dois do mesmo mais um "Wild" é o dobro da pontuação.
+8. Nenhum item correspondente retorna 0.
+
+Retornar um número inteiro da pontuação.
+
+Por exemplo:
+Início
+reel1 = "Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
+reel2 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
+reel3 = ["Wild","Star","Bell","Shell","Seven","Cherry","Bar","King","Queen","Jack"]
+spin = [5,5,5]
+result = fruit([reel1,reel2,reel3],spin)
+Scoring
+reel1[5] == "Cherry"
+reel2[5] == "Cherry"
+reel3[5] == "Cherry"
+
+Cherry + Cherry + Cherry == 50
+
+A tabela de pontuação está em ANEXOS.
